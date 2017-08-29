@@ -1,0 +1,2 @@
+git ls-remote --tags --refs https://github.com/vector-im/riot-web.git | awk '{print $2}' | tr -d "refs/tags/" | sort --version-sort
+curl -L -s 'https://registry.hub.docker.com/v2/repositories/bubuntux/riot-web/tags?page_size=1024' | jq '."results"[]["name"]' | tr -d '"' | sort --version-sort
