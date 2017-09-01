@@ -4,7 +4,7 @@ services:
   - docker
 
 install:
-  - sudo apt-get -y install curl git jq
+  - sudo apt-get -y install jq
 
 language: bash
 
