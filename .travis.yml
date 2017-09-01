@@ -9,5 +9,4 @@ install:
 language: bash
 
 script:
-  - ls
-  - main.sh
+  - ./main.sh
