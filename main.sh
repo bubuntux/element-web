@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e
 
+curl -sSl https://riot.im/packages/keys/riot.asc | gpg --import
+
 docker_versions=`curl -sSL 'https://registry.hub.docker.com/v2/repositories/bubuntux/riot-web/tags?page_size=1024' | jq '."results"[]["name"]' | tr -d '"' | sort --version-sort`
 riot_versions=`git ls-remote --tags --refs https://github.com/vector-im/riot-web | awk '{print $2}' | sed 's|^refs/tags/||' | sort --version-sort`
 
@@ -16,13 +18,7 @@ process_versions () {
 		curl -sSL https://github.com/vector-im/riot-web/releases/download/${riot_version}/riot-${riot_version}.tar.gz.asc -o riot-web.tar.gz.asc
 		
 		echo "Verifying files..."
-		gpg --no-default-keyring --default-key riot.asc --verify riot-web.tar.gz.asc riot-web.tar.gz
-		if [ $? -eq 0 ]; then
-    		echo "All good."
-		else
-    		echo "Problem with signature."
-    		continue
-		fi
+		gpg --verify riot-web.tar.gz.asc riot-web.tar.gz
 
 		echo "Preparing the app..."
 		tar -xzf riot-web.tar.gz
