@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - sudo apt-get -y install curl git jq
+
+script:
+  - main.sh
