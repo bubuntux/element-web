@@ -1,5 +1,5 @@
 # Riot.im in Docker [![Build Status](https://travis-ci.org/bubuntux/docker-riot-web.svg?branch=master)](https://travis-ci.org/bubuntux/docker-riot-web)
-This project is on charge of check everyday if there is a new [Riot](https://riot.im) version and generate the docker image if need it.
+This project is on charge of checking everyday if there is a new [Riot](https://riot.im) version and create the proper docker image and push it to the [hub](https://hub.docker.com/r/bubuntux/riot-web/) as need it.
 
 # What is Riot ? #
 [Riot](https://about.riot.im/what-is-riot) (formerly known as Vector) is a web client for [Matrix](https://matrix.org) an open network for secure, decentralized communication.
