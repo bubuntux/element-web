@@ -3,7 +3,7 @@
 # What is Riot ? #
 [Riot](https://about.riot.im/what-is-riot) (formerly known as Vector) is a web client for [Matrix](https://matrix.org) an open network for secure, decentralized communication.
 
-# How to use this image #
+# How to use the docker image #
 ```
 $ docker run --name riot -p 8080:80 -d bubuntux/riot-web
 ```
