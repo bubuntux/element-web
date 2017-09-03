@@ -9,4 +9,6 @@ install:
 language: bash
 
 script:
-  - ./main.sh
+  - docker_versions=`curl -sSL 'https://registry.hub.docker.com/v2/repositories/bubuntux/riot-web/tags?page_size=1024' | jq '."results"[]["name"]' | tr -d '"' | sort --version-sort`
+  - echo $docker_versions
+#  - ./main.sh

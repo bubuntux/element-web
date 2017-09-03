@@ -23,7 +23,6 @@ RUN if [ -z "$version" ]; then echo >&2 "error: build argument 'version' is requ
 	&& tar -xzf riot-web.tar.gz \
 	&& mv riot-${version} /etc/riot-web \
 	&& cp /etc/riot-web/config.sample.json /etc/riot-web/config.json \
-	&& rm -rf /usr/share/nginx/html \
-	&& ln -s /etc/riot-web /usr/share/nginx/html \
+	&& rm -rf /usr/share/nginx/html && ln -s /etc/riot-web /usr/share/nginx/html \
 	&& rm riot-web.tar.gz* \
 	&& apk del .build-deps
