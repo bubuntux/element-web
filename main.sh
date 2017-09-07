@@ -10,8 +10,15 @@ docker_login () {
 }
 
 process_versions () {
-	for riot_version in $@; do
-		if [[ $docker_versions == *$riot_version* ]]; then
+	for riot_version in $@ ; do
+		found=false
+		for docker_version in $docker_versions ; do
+			if [[ $docker_version == $riot_version ]]; then
+				found=true
+				break
+			fi
+	    	done
+		if $found ; then
 			echo "Version ${riot_version} already in docker."
 	  		continue
 		fi
