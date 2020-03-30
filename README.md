@@ -2,11 +2,11 @@
     <a href="https://riot.im/"><img src="https://about.riot.im/images/riot-logo-hero.svg"/></a>
     </br>
     <a href="https://github.com/bubuntux/docker-riot-web/blob/master/LICENSE"><img src="https://badgen.net/github/license/bubuntux/docker-riot-web?color=cyan"/></a>
-    <a href="https://cloud.docker.com/u/bubuntux/repository/docker/bubuntux/riot-web"><img src="https://images.microbadger.com/badges/image/bubuntux/riot-web.svg"/></a>
+     <a href="https://cloud.docker.com/u/bubuntux/repository/docker/bubuntux/riot-web"><img src="https://badgen.net/docker/size/bubuntux/riot-web?icon=docker&label=size"/></a>
     <a href="https://cloud.docker.com/u/bubuntux/repository/docker/bubuntux/riot-web"><img src="https://badgen.net/docker/pulls/bubuntux/riot-web?icon=docker&label=pulls"/></a>
     <a href="https://cloud.docker.com/u/bubuntux/repository/docker/bubuntux/riot-web"><img src="https://badgen.net/docker/stars/bubuntux/riot-web?icon=docker&label=stars"/></a>
-    <a href="https://github.com/bubuntux/docker-riot-web"><img src="https://badgen.net/github/forks/bubuntux/docker-riot-web?icon=github&label=forks"/></a>
-    <a href="https://github.com/bubuntux/docker-riot-web"><img src="https://badgen.net/github/stars/bubuntux/docker-riot-web?icon=github&label=stars"/></a>
+    <a href="https://github.com/bubuntux/docker-riot-web"><img src="https://badgen.net/github/forks/bubuntux/docker-riot-web?icon=github&label=forks&color=black"/></a>
+    <a href="https://github.com/bubuntux/docker-riot-web"><img src="https://badgen.net/github/stars/bubuntux/docker-riot-web?icon=github&label=stars&color=black"/></a>
     <a href="https://travis-ci.org/bubuntux/docker-riot-web"><img src="https://travis-ci.org/bubuntux/docker-riot-web.svg?branch=master"/></a>
 </p>
 
