@@ -1,8 +1,0 @@
-sudo: required
-services:
-  - docker
-install:
-  - sudo apt-get -y install jq
-language: bash
-script:
-  - ./main.sh

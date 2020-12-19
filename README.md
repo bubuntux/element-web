@@ -7,7 +7,7 @@
     <a href="https://cloud.docker.com/u/bubuntux/repository/docker/bubuntux/riot-web"><img src="https://badgen.net/docker/stars/bubuntux/riot-web?icon=docker&label=stars"/></a>
     <a href="https://github.com/bubuntux/docker-riot-web"><img src="https://badgen.net/github/forks/bubuntux/docker-riot-web?icon=github&label=forks&color=black"/></a>
     <a href="https://github.com/bubuntux/docker-riot-web"><img src="https://badgen.net/github/stars/bubuntux/docker-riot-web?icon=github&label=stars&color=black"/></a>
-    <a href="https://travis-ci.org/bubuntux/docker-riot-web"><img src="https://travis-ci.org/bubuntux/docker-riot-web.svg?branch=master"/></a>
+    <a href="https://github.com/bubuntux/element-web/actions?query=workflow%3Acron"><img src="https://github.com/bubuntux/element-web/workflows/cron/badge.svg"/></a>
 </p>
 
 This project is on charge of checking everyday if there is a new [Riot](https://riot.im) version and create the proper docker image and push it to the [hub](https://hub.docker.com/r/bubuntux/riot-web/) as need it.
