@@ -17,9 +17,9 @@ jobs:
       - name: Check new version
         id: check
         run: |
-          element_version=`curl -SsL https://api.github.com/repos/vector-im/element-web/releases | jq -r '.[].tag_name'  | sort --version-sort | tail -n 1`
+          element_version=`curl -SsL https://api.github.com/repos/vector-im/element-web/releases | jq -r '.[].tag_name' | head -n 1`
           echo "::set-output name=version::${element_version}"
-          docker_version=`curl -sSL 'https://registry.hub.docker.com/v2/repositories/bubuntux/element-web/tags' |  jq -r '."results"[]["name"]' | sort --version-sort | tail -n 1`
+          docker_version=`curl -sSL 'https://registry.hub.docker.com/v2/repositories/bubuntux/element-web/tags' | jq -r '."results"[]["name"] | select(.=="'${element_version}'")'`
           if [ "${element_version}" == "${docker_version}" ]; then
             echo "::set-output name=new::false"
           else
