@@ -17,18 +17,18 @@ This project is on charge of checking everyday if there is a new [Element](https
 
 # How to use the docker image #
 ```
-$ docker run --name element -p 8080:80 -d bubuntux/element-web
+$ docker run --name element -p 8080:80 -d ghcr.io/bubuntux/element-web
 ```
 Then you can hit [http://localhost:8080](http://localhost:8080) in your browser.
 
 # Element configuration #
 ```
-$ docker run -v /host/path/config.json:/etc/element-web/config.json:ro --name element -p 8080:80 -d bubuntux/element-web
+$ docker run -v /host/path/config.json:/etc/element-web/config.json:ro --name element -p 8080:80 -d ghcr.io/bubuntux/element-web
 ```
 For information on the syntax of the element configuration file, see [the official documentation](https://github.com/vector-im/element-web#configjson).
 
 # HTTP server configuration #
 ```
-$ docker run -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro --name element -p 8080:80 -d bubuntux/element-web
+$ docker run -v /host/path/nginx.conf:/etc/nginx/nginx.conf:ro --name element -p 8080:80 -d ghcr.io/bubuntux/element-web
 ```
 For information on the syntax of the nginx configuration files, see [the official documentation](http://nginx.org/en/docs/) (specifically the [Beginner's Guide](http://nginx.org/en/docs/beginners_guide.html#conf_structure)).
