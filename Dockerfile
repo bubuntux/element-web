@@ -3,7 +3,7 @@ FROM nginx:alpine
 MAINTAINER Julio Gutierrez <bubuntux@gmail.com>
 
 ARG version
-ARG GPG_KEY=5EA7E0F70461A3BCBEBE4D5EF6151806032026F9
+ARG GPG_KEY=2BAA9B8552BD9047
 RUN if [ -z "$version" ]; then echo >&2 "error: build argument 'version' is required" && exit 1; fi &&\
     apk add --no-cache --virtual .build-deps curl gnupg &&\
     curl -sSL https://github.com/vector-im/element-web/releases/download/${version}/element-${version}.tar.gz -o element-web.tar.gz &&\
